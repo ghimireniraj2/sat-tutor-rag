@@ -1,0 +1,26 @@
+# Core
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# RAG
+llama-index
+llama-index-vector-stores-qdrant
+llama-index-embeddings-huggingface
+
+# Vector DB
+qdrant-client
+
+# Embeddings
+sentence-transformers
+
+# Document parsing
+pypdf
+
+# Observability
+langfuse
+
+# Dev
+pytest
