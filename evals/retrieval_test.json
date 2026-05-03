@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "query": "How do I solve a quadratic equation by factoring?",
+        "expected_topics": ["algebra", "quadratic_equations"],
+        "expected_keywords": ["factor", "quadratic", "roots", "zero product"]
+    },
+    {
+        "id": 2,
+        "query": "What is the mean median and mode?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["mean", "average", "median", "mode"]
+    },
+    {
+        "id": 3,
+        "query": "How do I solve systems of linear equations?",
+        "expected_topics": ["systems_of_equation", "algebra", "linear_equations"],
+        "expected_keywords": ["system", "linear", "substitution", "elimination"]
+    },
+    {
+        "id": 4,
+        "query": "What are irrational numbers?",
+        "expected_topics": ["algebra"],
+        "expected_keywords": ["irrational", "fraction", "rational", "decimal"]
+    },
+    {
+        "id": 5,
+        "query": "distributive property multiply expressions algebra",
+        "expected_topics": ["equivalent_expressions", "algebra", "linear_equations"],
+        "expected_keywords": ["distributive", "multiply"]
+    },
+    {
+        "id": 6,
+        "query": "How do I calculate the mean of a data set?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["mean", "data"]
+    },
+    {
+        "id": 7,
+        "query": "What is the Pythagorean theorem?",
+        "expected_topics": ["algebra", "geometry"],
+        "expected_keywords": ["pythagorean", "triangle", "hypotenuse", "right"]
+    },
+    {
+    "id": 8,
+    "query": "How do I find the slope of a line?",
+    "expected_topics": ["linear_equations", "algebra", "linear_function"],
+    "expected_keywords": ["slope", "line"]
+    },
+    {
+        "id": 9,
+        "query": "What is standard deviation?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["standard deviation", "mean", "spread", "variance"]
+    },
+    {
+        "id": 10,
+        "query": "How do I simplify algebraic expressions?",
+        "expected_topics": ["algebra", "equivalent_expressions"],
+        "expected_keywords": ["simplify", "combine", "like terms", "expression"]
+    }
+]
