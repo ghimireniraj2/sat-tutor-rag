@@ -1,7 +1,7 @@
 ### sat-tutor-rag
 ### SAT Tutor RAG System (Enterprise-Grade AI Learning Assistant)
 
-A production-grade Retrieval-Augmented Generation (RAG) system that acts as an intelligent SAT tutor. Built as a learning project with real production tools and practices — not simplified toy implementations.
+A production-grade Retrieval-Augmented Generation (RAG) system that acts as an intelligent SAT tutor. Built as a learning project with real production tools and practices — not simplified implementations.
 The system helps students learn SAT Math, Reading, and Grammar through concept explanations, step-by-step problem solving, and practice question generation.
 ---
 Goals
