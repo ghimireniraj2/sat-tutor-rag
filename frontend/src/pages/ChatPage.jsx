@@ -14,9 +14,9 @@ export function ChatPage() {
       <header className="bg-white border-b border-gray-200 px-4 py-3
                          flex items-center justify-between shrink-0">
         <div>
-          <h1 className="font-semibold text-gray-900">SAT Tutor</h1>
+          <h1 className="font-semibold text-gray-900">AI SAT Tutor</h1>
           <p className="text-xs text-gray-500">
-            Powered by RAG · {mode === 'explain' ? 'Explain mode' : 'Practice mode'}
+            Powered by Retrieval-Augmented Generation (RAG) · {mode === 'explain' ? 'Explain mode' : 'Practice mode'}
           </p>
         </div>
         <div className="flex items-center gap-3">
