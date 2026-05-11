@@ -1,5 +1,6 @@
 // frontend/src/components/ChatMessage.jsx
 import { PracticeCard } from './PracticeCard'
+import ReactMarkdown from 'react-markdown'
 
 export function ChatMessage({ message }) {
   const isUser = message.role === 'user'
@@ -20,8 +21,8 @@ export function ChatMessage({ message }) {
         ) : (
           <div className="bg-white border border-gray-200 px-4 py-3
                           rounded-2xl rounded-tl-sm text-sm text-gray-800
-                          leading-relaxed whitespace-pre-wrap">
-            {message.content}
+                          leading-relaxed whitespace-pre-wrap !text-left">
+              <ReactMarkdown>{message.content}</ReactMarkdown>
           </div>
         )}
       </div>
