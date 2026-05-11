@@ -28,12 +28,12 @@
 
 # print(chat_completion.choices[0].message.content)
 
-"""Test Langfuse"""
+# """Test Langfuse"""
 
-from observe import start_trace, finish_trace
+# from observe import start_trace, finish_trace
 
-trace = start_trace("test", {"query": "hello"})
-finish_trace(trace, "world")
+# trace = start_trace("test", {"query": "hello"})
+# finish_trace(trace, "world")
 
 # from langfuse import Langfuse
 # from config import settings
@@ -47,3 +47,37 @@ finish_trace(trace, "world")
 # # See what methods are available
 # methods = [m for m in dir(lf) if not m.startswith('_')]
 # print(methods)
+
+
+# import requests
+
+# r = requests.post(
+#     "http://localhost:6333/collections/sat_tutor/facets",
+#     json={"key": "topic"}
+# )
+# print(r.status_code)
+# print(r.json())
+
+from qdrant_client import QdrantClient
+
+client = QdrantClient(url="http://localhost:6333")
+
+distinct_topics = set()
+offset = None
+
+while True:
+    results, offset = client.scroll(
+        collection_name="sat_tutor",
+        limit=100,
+        offset=offset,
+        with_payload=["topic"],
+        with_vectors=False,
+    )
+    for point in results:
+        val = point.payload.get("topic")
+        if val:
+            distinct_topics.add(val)
+    if offset is None:
+        break
+
+print(distinct_topics)

@@ -33,7 +33,8 @@ def log_retrieval(trace, chunks: list[dict]):
             "chunks": [
                 {
                     "text": c["text"][:200],
-                    "score": c.get("score"),
+                    "vector_score": c.get("vector_score", c.get("score")),
+                    "reranker_score": c.get("reranker_score"),
                     "topic": c["metadata"].get("topic"),
                 }
                 for c in chunks

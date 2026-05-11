@@ -44,3 +44,57 @@ def retrieve_with_filter(
     )
     nodes = retriever.retrieve(query)
     return [{"text": n.get_content(), "score": n.score, "metadata": n.metadata} for n in nodes]
+
+
+
+
+from sentence_transformers import CrossEncoder
+
+_reranker = None
+
+
+def get_reranker() -> CrossEncoder:
+    """Lazy load cross-encoder reranker."""
+    global _reranker
+    if _reranker is None:
+        _reranker = CrossEncoder(settings.reranker_model)
+    return _reranker
+
+
+def retrieve_reranked(
+    query: str,
+    top_k: int | None = None,
+    fetch_k: int | None = None,
+) -> list[dict]:
+    """
+    Retrieve with cross-encoder reranking.
+
+    Fetches fetch_k candidates via vector search, then reranks them
+    with the cross-encoder and returns top_k results.
+
+    The reranker sees (query, chunk) pairs and scores them directly —
+    more accurate than vector similarity alone.
+    """
+    final_k = top_k or settings.reranker_top_k
+    candidates_k = fetch_k or settings.reranker_fetch_k
+
+    # Step 1: Fetch more candidates than we need
+    candidates = retrieve(query, top_k=candidates_k)
+
+    if not candidates:
+        return []
+
+    # Step 2: Score each (query, chunk) pair with cross-encoder
+    reranker = get_reranker()
+    pairs = [(query, c["text"]) for c in candidates]
+    scores = reranker.predict(pairs)
+
+    # Step 3: Attach reranker scores and sort
+    for i, candidate in enumerate(candidates):
+        candidate["reranker_score"] = float(scores[i])
+        candidate["vector_score"] = candidate["score"]  # preserve original
+        candidate["score"] = float(scores[i])           # replace with reranker score
+
+    reranked = sorted(candidates, key=lambda x: x["reranker_score"], reverse=True)
+
+    return reranked[:final_k]

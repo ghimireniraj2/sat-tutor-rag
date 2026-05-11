@@ -26,8 +26,17 @@ langfuse==2.60.0
 # Dev
 pytest
 
-# py torch-directml
+## AMD GPU (RX 7800 XT)
 torch-directml
+
+## NVIDIA GPU
+#--index-url https://download.pytorch.org/whl/cu121
+#torch
+
+## CPU fallback 
+#torch --index-url https://download.pytorch.org/whl/cpu
+
+instructor
 
 # llm
 groq

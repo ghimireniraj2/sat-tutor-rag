@@ -20,6 +20,11 @@ class Settings(BaseSettings):
     # LLM
     groq_api_key: str
     groq_model: str = "llama-3.3-70b-versatile"
+
+    # reranker
+    reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    reranker_top_k: int = 3
+    reranker_fetch_k: int = 10
     
     model_config = SettingsConfigDict(env_file=".env")
 

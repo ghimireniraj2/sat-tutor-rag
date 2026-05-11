@@ -1,0 +1,452 @@
+[
+    {
+        "id": 1,
+        "query": "How do I solve a quadratic equation by factoring?",
+        "expected_topics": ["algebra", "quadratic_equations"],
+        "expected_keywords": ["factor", "quadratic", "roots", "zero product"],
+        "expected_behavior": "Should explain factoring steps with an example",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "query": "What is the quadratic formula and when do I use it?",
+        "expected_topics": ["algebra", "quadratic_equations"],
+        "expected_keywords": ["quadratic formula", "discriminant", "roots"],
+        "expected_behavior": "Should state the formula and explain when to use it vs factoring",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "query": "What are irrational numbers?",
+        "expected_topics": ["algebra"],
+        "expected_keywords": ["irrational", "rational", "decimal", "fraction"],
+        "expected_behavior": "Should define irrational numbers with examples like sqrt(2) and pi",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "query": "How do I simplify algebraic expressions by combining like terms?",
+        "expected_topics": ["algebra", "equivalent_expressions"],
+        "expected_keywords": ["combine", "like terms", "simplify", "expression"],
+        "expected_behavior": "Should explain what like terms are and how to combine them",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "query": "What is the distributive property in algebra?",
+        "expected_topics": ["equivalent_expressions", "algebra"],
+        "expected_keywords": ["distributive", "multiply", "expand"],
+        "expected_behavior": "Should explain a(b+c) = ab + ac with an example",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "query": "How do I factor a polynomial expression?",
+        "expected_topics": ["algebra", "equivalent_expressions", "quadratic_equations"],
+        "expected_keywords": ["factor", "polynomial", "common"],
+        "expected_behavior": "Should explain GCF factoring and difference of squares",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "query": "What is the difference between a function and an equation?",
+        "expected_topics": ["algebra", "linear_function"],
+        "expected_keywords": ["function", "input", "output", "equation"],
+        "expected_behavior": "Should explain function notation and the vertical line test",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "query": "How do I evaluate a function for a given value?",
+        "expected_topics": ["algebra", "linear_function"],
+        "expected_keywords": ["function", "substitute", "evaluate", "value"],
+        "expected_behavior": "Should explain substituting x values into function notation",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "query": "What are exponent rules for multiplying and dividing?",
+        "expected_topics": ["algebra"],
+        "expected_keywords": ["exponent", "power", "multiply", "divide"],
+        "expected_behavior": "Should explain product rule and quotient rule for exponents",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 10,
+        "query": "How do I solve absolute value equations?",
+        "expected_topics": ["algebra"],
+        "expected_keywords": ["absolute value", "positive", "negative", "solution"],
+        "expected_behavior": "Should explain splitting into two cases",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "query": "How do I find the slope of a line from two points?",
+        "expected_topics": ["linear_equations", "algebra", "linear_function"],
+        "expected_keywords": ["slope", "rise", "run", "points"],
+        "expected_behavior": "Should explain the slope formula (y2-y1)/(x2-x1)",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 12,
+        "query": "What is slope intercept form of a linear equation?",
+        "expected_topics": ["linear_equations", "linear_function"],
+        "expected_keywords": ["slope", "intercept", "linear", "equation"],
+        "expected_behavior": "Should explain y = mx + b and what m and b represent",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 13,
+        "query": "How do I solve a system of linear equations by substitution?",
+        "expected_topics": ["systems_of_equation", "linear_equations"],
+        "expected_keywords": ["system", "substitution", "linear", "solution"],
+        "expected_behavior": "Should walk through substitution method step by step",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "query": "How do I solve a system of equations by elimination?",
+        "expected_topics": ["systems_of_equation", "linear_equations"],
+        "expected_keywords": ["elimination", "system", "add", "subtract"],
+        "expected_behavior": "Should explain adding or subtracting equations to eliminate a variable",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "query": "What does it mean when a system of equations has no solution?",
+        "expected_topics": ["systems_of_equation", "linear_equations"],
+        "expected_keywords": ["system", "parallel", "solution"],
+        "expected_behavior": "Should explain parallel lines and inconsistent systems",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "query": "How do I write a linear equation from a word problem?",
+        "expected_topics": ["linear_equations", "linear_equation_two", "algebra"],
+        "expected_keywords": ["linear", "equation", "variable", "word problem"],
+        "expected_behavior": "Should explain identifying variables and relationships in context",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "query": "What is the relationship between parallel lines and their slopes?",
+        "expected_topics": ["linear_equations", "algebra", "linear_function"],
+        "expected_keywords": ["parallel", "slope", "equal", "lines"],
+        "expected_behavior": "Should state that parallel lines have equal slopes",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 18,
+        "query": "How do I find the x and y intercepts of a line?",
+        "expected_topics": ["linear_equation_two", "linear_equations", "algebra"],
+        "expected_keywords":["intercept", "line", "zero"],
+        "expected_behavior": "Should explain setting x=0 for y-intercept and y=0 for x-intercept",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 19,
+        "query": "What is the Pythagorean theorem?",
+        "expected_topics": ["algebra", "geometry"],
+        "expected_keywords": ["pythagorean", "triangle", "hypotenuse", "right"],
+        "expected_behavior": "Should state a² + b² = c² and explain when to use it",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 20,
+        "query": "How do I find the area of a circle?",
+        "expected_topics": ["geometry", "algebra"],
+        "expected_keywords": ["area", "circle", "radius", "pi"],
+        "expected_behavior": "Should state A = πr² and explain what radius means",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 21,
+        "query": "What is the circumference of a circle?",
+        "expected_topics": ["geometry"],
+        "expected_keywords": ["circumference", "circle", "diameter", "pi"],
+        "expected_behavior": "Should give C = 2πr and C = πd",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 22,
+        "query": "How do I find the volume of a cylinder?",
+        "expected_topics": ["geometry"],
+        "expected_keywords": ["volume", "cylinder", "radius", "height"],
+        "expected_behavior": "Should state V = πr²h and explain each variable",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 23,
+        "query": "What are the properties of similar triangles?",
+        "expected_topics": ["geometry", "algebra"],
+        "expected_keywords": ["similar", "triangle", "ratio", "proportion"],
+        "expected_behavior": "Should explain corresponding angles and proportional sides",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "query": "How do I find the angle measures in a triangle?",
+        "expected_topics": ["geometry", "algebra"],
+        "expected_keywords": ["angle", "triangle", "sum", "180"],
+        "expected_behavior": "Should state angles in a triangle sum to 180 degrees",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 25,
+        "query": "What is the relationship between inscribed angles and central angles in a circle?",
+        "expected_topics": ["geometry"],
+        "expected_keywords": ["inscribed", "central", "angle", "arc"],
+        "expected_behavior": "Should explain inscribed angle is half the central angle",
+        "graph_dependent": false,
+        "difficulty": "hard"
+    },
+    {
+        "id": 26,
+        "query": "What is the mean median and mode of a data set?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["mean", "median", "mode", "average"],
+        "expected_behavior": "Should define all three and explain differences",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 27,
+        "query": "How do I calculate the mean of a data set?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["mean", "sum", "average", "data"],
+        "expected_behavior": "Should explain sum divided by count",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 28,
+        "query": "What is standard deviation and what does it measure?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["standard deviation", "spread", "mean", "variance"],
+        "expected_behavior": "Should explain standard deviation measures spread around the mean",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "query": "What is the difference between population and sample in statistics?",
+        "expected_topics": ["statistics"],
+        "expected_keywords": ["population", "sample", "parameter", "statistic"],
+        "expected_behavior": "Should explain population vs sample and why sampling is used",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 30,
+        "query": "How do I find the median of a data set?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["median", "middle", "order", "even"],
+        "expected_behavior": "Should explain ordering data and finding the middle value",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 31,
+        "query": "What is a frequency distribution?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["frequency", "distribution", "data", "count"],
+        "expected_behavior": "Should explain how frequency distributions organize data",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 32,
+        "query": "What does it mean for two events to be independent in probability?",
+        "expected_topics": ["probabilty", "statistics"],
+        "expected_keywords": ["independent", "probability", "event", "outcome"],
+        "expected_behavior": "Should explain P(A and B) = P(A) x P(B) for independent events",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 33,
+        "query": "How do I calculate simple probability?",
+        "expected_topics": ["probabilty", "statistics"],
+        "expected_keywords": ["probability", "favorable", "total", "outcomes"],
+        "expected_behavior": "Should explain probability as favorable outcomes over total outcomes",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 34,
+        "query": "What is a margin of error in statistics?",
+        "expected_topics": ["statistics", "statistics.margin"],
+        "expected_keywords": ["margin", "error", "sample", "confidence"],
+        "expected_behavior": "Should explain margin of error in context of survey results",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 35,
+        "query": "What is the difference between correlation and causation?",
+        "expected_topics": ["two_variable", "statistics"],
+        "expected_keywords": ["correlation", "causation", "relationship", "association"],
+        "expected_behavior": "Should explain that correlation does not imply causation",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 36,
+        "query": "How do I convert a percentage to a decimal?",
+        "expected_topics": ["percentages", "algebra"],
+        "expected_keywords": ["percent", "decimal", "divide", "hundred"],
+        "expected_behavior": "Should explain dividing by 100 to convert",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 37,
+        "query": "How do I calculate a percentage increase or decrease?",
+        "expected_topics": ["percentages", "algebra"],
+        "expected_keywords": ["percent", "increase", "decrease", "change"],
+        "expected_behavior": "Should give the formula (new - old) / old x 100",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 38,
+        "query": "How do I solve a proportion?",
+        "expected_topics": ["algebra", "ratio.unit.rate.proportions"],
+        "expected_keywords": ["proportion", "cross multiply", "ratio", "equal"],
+        "expected_behavior": "Should explain cross multiplication to solve proportions",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 39,
+        "query": "What is a unit rate and how do I calculate it?",
+        "expected_topics": ["ratio.unit.rate.proportions", "linear_equations", "percentages"],
+        "expected_keywords": ["unit rate", "ratio", "per", "divide"],
+        "expected_behavior": "Should explain unit rate as ratio with denominator of 1",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 40,
+        "query": "How do I convert between units of measurement?",
+        "expected_topics": ["algebra", "ratio.unit.rate.proportions"],
+        "expected_keywords": ["convert", "unit", "ratio", "multiply"],
+        "expected_behavior": "Should explain using conversion factors and unit analysis",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 41,
+        "query": "What are equivalent expressions in algebra?",
+        "expected_topics": ["equivalent_expressions"],
+        "expected_keywords": ["equivalent", "expression", "simplify", "equal"],
+        "expected_behavior": "Should explain that equivalent expressions have the same value",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 42,
+        "query": "How do I multiply two binomials using FOIL?",
+        "expected_topics": ["equivalent_expressions", "algebra"],
+        "expected_keywords": ["FOIL", "binomial", "multiply", "first outer inner last"],
+        "expected_behavior": "Should explain the FOIL method with an example",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 43,
+        "query": "What is a linear inequality and how do I solve it?",
+        "expected_topics": ["systems_of_equation", "linear_equations", "one_variable"],
+        "expected_keywords": ["inequality", "linear", "greater", "less than"],
+        "expected_behavior": "Should explain solving inequalities and flipping sign when dividing by negative",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 44,
+        "query": "What is scientific notation?",
+        "expected_topics": ["algebra"],
+        "expected_keywords": ["scientific notation", "power", "exponent", "decimal"],
+        "expected_behavior": "Should explain writing numbers as a x 10^n",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 45,
+        "query": "How do I find the midpoint between two points?",
+        "expected_topics": ["geometry", "algebra"],
+        "expected_keywords": ["midpoint", "average", "coordinates", "formula"],
+        "expected_behavior": "Should give midpoint formula ((x1+x2)/2, (y1+y2)/2)",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 46,
+        "query": "How do I find the distance between two points?",
+        "expected_topics": ["geometry", "algebra"],
+        "expected_keywords": ["distance", "formula", "coordinates", "pythagorean"],
+        "expected_behavior": "Should give distance formula derived from Pythagorean theorem",
+        "graph_dependent": false,
+        "difficulty": "easy"
+    },
+    {
+        "id": 47,
+        "query": "What is a rational expression and how do I simplify it?",
+        "expected_topics": ["algebra", "equivalent_expressions"],
+        "expected_keywords": ["rational", "expression", "fraction", "cancel"],
+        "expected_behavior": "Should explain simplifying by factoring and cancelling common factors",
+        "graph_dependent": false,
+        "difficulty": "hard"
+    },
+    {
+        "id": 48,
+        "query": "How do I solve equations with variables on both sides?",
+        "expected_topics": ["algebra", "linear_equations", "one_variable"],
+        "expected_keywords": ["variable", "both sides", "collect", "solve"],
+        "expected_behavior": "Should explain collecting variables on one side",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 49,
+        "query": "What is the range of a function?",
+        "expected_topics": ["algebra", "linear_function"],
+        "expected_keywords": ["range", "output", "function", "values"],
+        "expected_behavior": "Should explain range as the set of all possible output values",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    },
+    {
+        "id": 50,
+        "query": "How do I identify outliers in a data set?",
+        "expected_topics": ["statistics", "one_variable"],
+        "expected_keywords": ["outlier", "data", "quartile", "spread"],
+        "expected_behavior": "Should explain outliers as values far from the rest of the data",
+        "graph_dependent": false,
+        "difficulty": "medium"
+    }
+]
